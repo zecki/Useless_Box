@@ -14,7 +14,7 @@ void setup() {
 void loop() {
   buttonState = digitalRead(buttonPin);
   if (buttonState == HIGH) {
-    for (int pos = 0; pos <= 256; pos++)  {			//Flap opens
+    for (int pos = 0; pos < 256; pos++)  {			//Flap opens
         analogWrite(servoPin2, pos);
         delay(20);
     }
